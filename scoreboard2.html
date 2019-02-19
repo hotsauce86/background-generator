@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+
+<header>
+	
+</header>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			$("p").click(function(){
+				$(this).hide();
+			})
+		})
+	</script>
+
+	<style type="text/css">
+		body{
+			background-color: #0080ff;
+		}
+		h4{
+			font-family: verdana;
+			color: #fff;
+		}
+		b{
+			font-family: verdana;
+			color: #fff;
+		}
+		p{
+			font-family: verdana;
+			color: #fff;
+		}
+
+		input[type=text], select {
+		  width: 20em;
+		  padding: 4px 4px;
+		  margin: 4px;
+		  display: inline-block;
+		  border: 1px solid #ccc;
+		  border-radius: 4px;
+		  box-sizing: border-box;
+		}
+
+		input[type=submit] {
+		  width: 20em;
+		  background-color: #4CAF50;
+		  color: white;
+		  padding: 4px 4px;
+		  margin: 4px;
+		  border: none;
+		  border-radius: 4px;
+		  cursor: pointer;
+		}
+
+		input[type=submit]:hover {
+		  background-color: #45a049;
+		}
+	</style>
+</head>
+<body>
+
+<p>
+	Hello! This is a simple scoreboard app written in JavaScript.
+</p>
+
+<p id="demo">
+	
+</p>
+
+<h4>Enter player ID and score</h4>
+
+<p>Player ID</p><br>
+<input type="text" id="myID" name="PlayerID">
+<p>Player Score</p><br>
+ <input type="text" id="myScore" name="Score">
+
+<div>
+<input type="submit" name="submitButton" onclick="addScore()" value="Add Score">	
+<button onclick="addScore()">Add Score</button>
+<!--button onclick="drawTable()">Draw Table</button-->
+
+<h4>Enter a player's "ID" number to remove player from the scoreboard</h4>
+<input type="text" id="deletePlayer" name="PlayerID"> 
+
+<button onclick="removePlayer()">Delete</button>
+
+
+
+<br><br>
+
+
+<b  style="width:50%; float:left">Scoreboard</b> <b style="width:50%; float:right">Average Scores</b>
+<br><br>
+
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+td, th {
+	/*
+    border: 1px solid #dddddd;
+    */
+    color: #fff;
+    border: 1px solid #fff;
+    text-align: left;
+    padding: 8px;
+}
+
+
+tr:nth-child(even) {
+	/*
+    background-color: #dddddd;
+    */
+    background-color: #888;
+
+    color: #0080ff;
+    td{
+    	color: #0080ff;
+    }
+
+}
+</style>
+
+
+
+<table id="scoreTable" border="0" cellspacing="0" style="width:50%; float:left">
+	<thead>
+	<tr>
+		<th>PlayerID</th>
+		<th>Score</th>
+	</tr>
+	</thead>
+	<tbody id="scoreTableBody">
+		<tr></tr>
+	</tbody>
+	<!-- INSERT NEW TABLE ROWS HERE -->
+	
+</table>
+
+</div>
+
+
+
+<!--button onclick="drawTableAve()">Update Averages</button-->
+
+<div>
+	<table id="aveTable" border="0" cellspacing="0" style="width:50%; float:left">
+	<thead>
+		<tr>
+			<th>PlayerID</th>
+			<th>Ave Score</th>
+			<th>Total Games</th>
+		</tr>
+	</thead>
+	<tbody id="aveTableBody">
+	<!-- INSERT NEW TABLE ROWS HERE -->
+		<tr></tr>
+	</tbody>
+</table>
+</div>
+
+<!--button onclick="uniquePlayerIDCheck()">Check console for num of players</button-->
+<!--button onclick="aveScores()">Sort Averages</button-->
+
+
+
+<b>Total Scores</b>
+<p id="totalNumOfScores">
+</p>
+
+<script src="scoreboard.js"></script>
+</body>
+</html>
