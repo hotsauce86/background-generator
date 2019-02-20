@@ -52,6 +52,21 @@
 		  border-radius: 4px;
 		  cursor: pointer;
 		}
+		input#thedelete {
+		  width: 15em;
+		  background-color: red;
+		  color: white;
+		  padding: 4px 4px;
+		  margin: 4px;
+		  border: 1px solid #ccc;
+		  border-radius: 4px;
+		  cursor: pointer;
+		}
+		input#thedelete:hover{
+			color: skyblue;
+		  background-color: darkred;
+		}
+	
 
 		input[type=submit]:hover {
 			color: skyblue;
@@ -83,10 +98,10 @@
 
 <h4>Enter a player's "ID" number to remove player from the scoreboard</h4>
 <input type="text" id="deletePlayer" name="PlayerID"> 
+<br>
+<input type="button" id="thedelete" onclick="removePlayer()" value="Deleteo"/>
 
-<button onclick="removePlayer()">Delete</button>
-
-<p>Hello Im adding some more text here don't mind me this is hard to typw without a desk, thanks alot k400+, making me stay up in bed adding git ands commits</p>
+<p>Hello Im adding some more text here don't mind me this is hard to typw without a desk, thanks alot k400+, making me stay up in bed adding git ands commits </p>
 
 <br><br>
 
