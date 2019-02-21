@@ -106,7 +106,7 @@
 <br><br>
 
 
-<b  style="width:50%; float:left">Scoreboard</b> <b style="width:50%; float:right">Average Scores</b>
+<b  style="width:5em; float:left">Scoreboard</b> <b style="width:50em; float:right">Average Scores</b>
 <br><br>
 
 <style>
@@ -142,8 +142,12 @@ tr:nth-child(even) {
 </style>
 
 
+<b>Total Scores</b>
+<p id="totalNumOfScores">
+</p>
 
-<table id="scoreTable" border="0" cellspacing="0" style="width:50%; float:left">
+
+<table id="scoreTable" border="0" cellspacing="0" style="width:50em; float:left">
 	<thead>
 	<tr>
 		<th>PlayerID</th>
@@ -160,11 +164,10 @@ tr:nth-child(even) {
 </div>
 
 
-
 <!--button onclick="drawTableAve()">Update Averages</button-->
 
 <div>
-	<table id="aveTable" border="0" cellspacing="0" style="width:50%; float:left">
+	<table id="aveTable" border="0" cellspacing="0" style="width:50em; float:right">
 	<thead>
 		<tr>
 			<th>PlayerID</th>
@@ -184,9 +187,6 @@ tr:nth-child(even) {
 
 
 
-<b>Total Scores</b>
-<p id="totalNumOfScores">
-</p>
 
 <script src="scoreboard.js"></script>
 </body>
