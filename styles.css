@@ -84,6 +84,16 @@ tr:nth-child(even) {
 
 }
 
-.inputPlayerID, .inputPlayerScore, .inputSubmit, .inputDelete{
+.inputPlayerID, .inputPlayerScore, .inputSubmit, .inputDelete , .inputDeleteButton{
 	display: inline-block;
+	text-align: center;
+	/* background-color: navy; */
+}
+
+.input_fields{
+	display: inline-block;
+	text-align: center;
+	margin: auto;
+	border: 2px solid #fff;
+	/* background-color: blue; */
 }

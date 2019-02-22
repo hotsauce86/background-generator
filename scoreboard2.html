@@ -24,45 +24,47 @@
 	Hello! This is a simple scoreboard app written in JavaScript.
 </p>
 
-<div class="input_fields" style="background-color: black">
-<h4>Enter player ID and score</h4>
+<div class="input_fields">
+	<h4>Enter player ID and score</h4>
 
-<div class="inputPlayerID" style="background-color: grey">
-<p style="display:inline  width:5em" >Player ID    </p>
-<input type="text" id="myID" name="PlayerID" value="PlayerID">
-</div>
+	<div class="inputPlayerID">
+		<p style="display:inline  width:5em" >Player ID    </p>
+		<input type="text" id="myID" name="PlayerID" placeholder="PlayerID">
+	</div>
 
-<div class="inputPlayerScore" style="background-color: grey">
-<p style="display:inline width:5em">Player Score</p>
-<input type="text" id="myScore" name="Score" value="Score">
-</div>
+	<div class="inputPlayerScore">
+		<p style="display:inline width:5em">Player Score</p>
+		<input type="text" id="myScore" name="Score" placeholder="Score">
+	</div>
 
-<div class="inputSubmit" style="background-color: grey">
-<input type="submit" name="submitButton" onclick="addScore()" value="Add Score">	
-</div>
+	<div class="inputSubmit">
+		<input type="submit" name="submitButton" onclick="addScore()" value="Add Score">	
+	</div>
 
 
 <h4>Enter a player's "ID" number to remove player from the scoreboard</h4>
-<div class="inputDelete" style="background-color: grey">
-<input type="text" id="deletePlayer" name="PlayerID" value="Delete Player"> 
-<input type="button" id="thedelete" onclick="removePlayer()" value="Deleteo"/> 
-</div>
+	<div class="inputDelete">
+		<input type="text" id="deletePlayer" name="PlayerID" placeholder="Delete Player"> 
+	</div>
+
+	<div class="inputDeleteButton">
+		<input type="button" id="thedelete" onclick="removePlayer()" value="Deleteo"/> 
+	</div>
 
 </div>
+
+
 <div>
 
 <!--button onclick="drawTable()">Draw Table</button-->
-<p>Hello Im adding some more text here don't mind me this is hard to typw without a desk, thanks alot k400+, making me stay up in bed adding git ands commits </p>
-<br><br>
-<b  style="width:5em; float:left">Scoreboard</b> <b style="width:50em; float:right">Average Scores</b>
-<br><br>
+
 
 <b>Total Scores</b>
 <p id="totalNumOfScores">
 </p>
 
 
-<table id="scoreTable" border="0" cellspacing="0" style="width:50em; float:left">
+<table id="scoreTable" border="0" cellspacing="0" style="width:50%; float:left">
 	<thead>
 	<tr>
 		<th>PlayerID</th>
@@ -82,7 +84,7 @@
 <!--button onclick="drawTableAve()">Update Averages</button-->
 
 <div>
-	<table id="aveTable" border="0" cellspacing="0" style="width:50em; float:right">
+	<table id="aveTable" border="0" cellspacing="0" style="width:50%; float:right">
 	<thead>
 		<tr>
 			<th>PlayerID</th>
