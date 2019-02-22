@@ -7,6 +7,7 @@
 <head>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+	<link rel="stylesheet" href="styles.css">
 	<script>
 		$(document).ready(function(){
 			$("p").click(function(){
@@ -15,64 +16,7 @@
 		})
 	</script>
 
-	<style type="text/css">
-		body{
-			background-color: #0080ff;
-		}
-		h4{
-			font-family: verdana;
-			color: #fff;
-		}
-		b{
-			font-family: verdana;
-			color: #fff;
-		}
-		p{
-			font-family: verdana;
-			color: #fff;
-		}
-
-		input[type=text], select {
-		  width: 15em;
-		  padding: 4px 4px;
-		  margin: 4px;
-		  display: inline-block;
-		  border: 1px solid #ccc;
-		  border-radius: 4px;
-		  box-sizing: border-box;
-		}
-
-		input[type=submit] {
-		  width: 15em;
-		  background-color: #4CAF50;
-		  color: white;
-		  padding: 4px 4px;
-		  margin: 4px;
-		  border: 1px solid #ccc;
-		  border-radius: 4px;
-		  cursor: pointer;
-		}
-		input#thedelete {
-		  width: 15em;
-		  background-color: red;
-		  color: white;
-		  padding: 4px 4px;
-		  margin: 4px;
-		  border: 1px solid #ccc;
-		  border-radius: 4px;
-		  cursor: pointer;
-		}
-		input#thedelete:hover{
-			color: skyblue;
-		  background-color: darkred;
-		}
 	
-
-		input[type=submit]:hover {
-			color: skyblue;
-		  background-color: #45a049;
-		}
-	</style>
 </head>
 <body>
 
@@ -80,67 +24,38 @@
 	Hello! This is a simple scoreboard app written in JavaScript.
 </p>
 
-<p id="demo">
-	
-</p>
-
+<div class="input_fields" style="background-color: black">
 <h4>Enter player ID and score</h4>
 
-<p>Player ID</p><br>
-<input type="text" id="myID" name="PlayerID">
-<p>Player Score</p><br>
- <input type="text" id="myScore" name="Score">
+<div class="inputPlayerID" style="background-color: grey">
+<p style="display:inline  width:5em" >Player ID    </p>
+<input type="text" id="myID" name="PlayerID" value="PlayerID">
+</div>
 
-<div>
+<div class="inputPlayerScore" style="background-color: grey">
+<p style="display:inline width:5em">Player Score</p>
+<input type="text" id="myScore" name="Score" value="Score">
+</div>
+
+<div class="inputSubmit" style="background-color: grey">
 <input type="submit" name="submitButton" onclick="addScore()" value="Add Score">	
-<button onclick="addScore()">Add Score</button>
-<!--button onclick="drawTable()">Draw Table</button-->
+</div>
+
 
 <h4>Enter a player's "ID" number to remove player from the scoreboard</h4>
-<input type="text" id="deletePlayer" name="PlayerID"> 
-<br>
-<input type="button" id="thedelete" onclick="removePlayer()" value="Deleteo"/>
+<div class="inputDelete" style="background-color: grey">
+<input type="text" id="deletePlayer" name="PlayerID" value="Delete Player"> 
+<input type="button" id="thedelete" onclick="removePlayer()" value="Deleteo"/> 
+</div>
 
+</div>
+<div>
+
+<!--button onclick="drawTable()">Draw Table</button-->
 <p>Hello Im adding some more text here don't mind me this is hard to typw without a desk, thanks alot k400+, making me stay up in bed adding git ands commits </p>
-
 <br><br>
-
-
 <b  style="width:5em; float:left">Scoreboard</b> <b style="width:50em; float:right">Average Scores</b>
 <br><br>
-
-<style>
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 50%;
-}
-
-td, th {
-	/*
-    border: 1px solid #dddddd;
-    */
-    color: #fff;
-    border: 1px solid #fff;
-    text-align: left;
-    padding: 8px;
-}
-
-
-tr:nth-child(even) {
-	/*
-    background-color: #dddddd;
-    */
-    background-color: #888;
-
-    color: #0080ff;
-    td{
-    	color: #0080ff;
-    }
-
-}
-</style>
-
 
 <b>Total Scores</b>
 <p id="totalNumOfScores">

@@ -121,10 +121,13 @@ function addScore(){
 	var x = document.getElementById("myID").value;
 	var y = document.getElementById("myScore").value;
 	if(x == "" || y == ""){
-		document.getElementById('demo').innerHTML = "hey, you need values in all fields!";
+		alert("Please enter a player ID and their score");
+	}
+	else if(isNaN(x) != false || isNaN(y) != false){
+		alert("Please enter numeric values only.");
 	}
 	else{
-		var addToScoreboardHistory = {"playerID": x, "score": y};
+	var addToScoreboardHistory = {"playerID": x, "score": y};
 	scoreBoardHistory.push(addToScoreboardHistory);
 	document.getElementById("totalNumOfScores").innerHTML = countScores();
 	}

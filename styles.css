@@ -83,3 +83,7 @@ tr:nth-child(even) {
     }
 
 }
+
+.inputPlayerID, .inputPlayerScore, .inputSubmit, .inputDelete{
+	display: inline-block;
+}
