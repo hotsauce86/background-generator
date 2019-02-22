@@ -1,0 +1,85 @@
+body{
+			background-color: #0080ff;
+		}
+		h4{
+			font-family: verdana;
+			color: #fff;
+		}
+		b{
+			font-family: verdana;
+			color: #fff;
+		}
+		p{
+			font-family: verdana;
+			color: #fff;
+		}
+
+		input[type=text], select {
+		  width: 15em;
+		  padding: 4px 4px;
+		  margin: 4px;
+		  display: inline-block;
+		  border: 1px solid #ccc;
+		  border-radius: 4px;
+		  box-sizing: border-box;
+		}
+
+		input[type=submit] {
+		  width: 15em;
+		  background-color: #4CAF50;
+		  color: white;
+		  padding: 4px 4px;
+		  margin: 4px;
+		  border: 1px solid #ccc;
+		  border-radius: 4px;
+		  cursor: pointer;
+		}
+		input#thedelete {
+		  width: 15em;
+		  background-color: red;
+		  color: white;
+		  padding: 4px 4px;
+		  margin: 4px;
+		  border: 1px solid #ccc;
+		  border-radius: 4px;
+		  cursor: pointer;
+		}
+		input#thedelete:hover{
+			color: skyblue;
+		  background-color: darkred;
+		}
+	
+
+		input[type=submit]:hover {
+			color: skyblue;
+		  background-color: #45a049;
+		}
+		table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+td, th {
+	/*
+    border: 1px solid #dddddd;
+    */
+    color: #fff;
+    border: 1px solid #fff;
+    text-align: left;
+    padding: 8px;
+}
+
+
+tr:nth-child(even) {
+	/*
+    background-color: #dddddd;
+    */
+    background-color: #888;
+
+    color: #0080ff;
+    td{
+    	color: #0080ff;
+    }
+
+}
