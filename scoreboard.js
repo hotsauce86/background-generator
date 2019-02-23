@@ -124,6 +124,10 @@ function addScore(){
 		alert("Please enter a player ID and their score");
 	}
 	else if(isNaN(x) != false || isNaN(y) != false){
+		if(x.includes("fuck") || x.includes("shit")){
+			alert("Yeah, your IP is being recorded for that. Also...");
+			document.body.innerHTML = "Hey, that language is uncalled for! >:(";
+		}
 		alert("Please enter numeric values only.");
 	}
 	else{

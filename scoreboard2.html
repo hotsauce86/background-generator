@@ -23,36 +23,36 @@
 <p>
 	Hello! This is a simple scoreboard app written in JavaScript.
 </p>
+<div class="inputs">
+	<div class="input_fields">
+		<h4>Enter player ID and score</h4>
 
-<div class="input_fields">
-	<h4>Enter player ID and score</h4>
+		<div class="inputPlayerID">
+			<p style="display:inline  width:5em" >Player ID    </p>
+			<input type="text" id="myID" name="PlayerID" placeholder="PlayerID">
+		</div>
 
-	<div class="inputPlayerID">
-		<p style="display:inline  width:5em" >Player ID    </p>
-		<input type="text" id="myID" name="PlayerID" placeholder="PlayerID">
+		<div class="inputPlayerScore">
+			<p style="display:inline width:5em">Player Score</p>
+			<input type="text" id="myScore" name="Score" placeholder="Score">
+		</div>
+
+		<div class="inputSubmit">
+			<input type="submit" name="submitButton" onclick="addScore()" value="Add Score">	
+		</div>
+
+
+	<h4>Enter a player's "ID" number to remove player from the scoreboard</h4>
+		<div class="inputDelete">
+			<input type="text" id="deletePlayer" name="PlayerID" placeholder="Delete Player"> 
+		</div>
+
+		<div class="inputDeleteButton">
+			<input type="button" id="thedelete" onclick="removePlayer()" value="Deleteo"/> 
+		</div>
+
 	</div>
-
-	<div class="inputPlayerScore">
-		<p style="display:inline width:5em">Player Score</p>
-		<input type="text" id="myScore" name="Score" placeholder="Score">
-	</div>
-
-	<div class="inputSubmit">
-		<input type="submit" name="submitButton" onclick="addScore()" value="Add Score">	
-	</div>
-
-
-<h4>Enter a player's "ID" number to remove player from the scoreboard</h4>
-	<div class="inputDelete">
-		<input type="text" id="deletePlayer" name="PlayerID" placeholder="Delete Player"> 
-	</div>
-
-	<div class="inputDeleteButton">
-		<input type="button" id="thedelete" onclick="removePlayer()" value="Deleteo"/> 
-	</div>
-
 </div>
-
 
 <div>
 

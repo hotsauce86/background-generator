@@ -97,3 +97,10 @@ tr:nth-child(even) {
 	border: 2px solid #fff;
 	/* background-color: blue; */
 }
+
+.inputs{
+		margin: auto;
+	display: inline-block;
+	background-color: black;
+	text-align: center;
+}
