@@ -45,15 +45,41 @@ body{
 		  cursor: pointer;
 		}
 		input#thedelete:hover{
-			color: skyblue;
+			color: orange;
 		  background-color: darkred;
+		  animation: pulse2 1s infinite;
 		}
 	
 
 		input[type=submit]:hover {
 			color: skyblue;
 		  background-color: #45a049;
+		  animation: pulse 1s infinite;
 		}
+		@keyframes pulse {
+  0% {
+    background-color: #001F3F;
+  }
+  50%{
+  	background-color: skyblue;
+  }
+  100% {
+    background-color: #001F3F;
+  }
+}
+	@keyframes pulse2 {
+  0% {
+    background-color: #001F3F;
+  }
+  50%{
+  	background-color: orange;
+  }
+  100% {
+    background-color: #001F3F;
+  }
+}
+		
+
 		table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
@@ -95,12 +121,19 @@ tr:nth-child(even) {
 	text-align: center;
 	margin: auto;
 	border: 2px solid #fff;
+	padding: 4px 4px;
+		  margin: 4px;
+		  border-radius: 8px;
+
 	/* background-color: blue; */
 }
 
 .inputs{
 		margin: auto;
+		padding: 4px 4px;
+		  margin: 4px;
+		  border-radius: 8px;
 	display: inline-block;
-	background-color: black;
+	background-color: #004077;
 	text-align: center;
 }

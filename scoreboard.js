@@ -124,11 +124,12 @@ function addScore(){
 		alert("Please enter a player ID and their score");
 	}
 	else if(isNaN(x) != false || isNaN(y) != false){
-		if(x.includes("fuck") || x.includes("shit")){
+		if(x.includes("fuck")==false || x.includes("shit")==false){
 			alert("Yeah, your IP is being recorded for that. Also...");
 			document.body.innerHTML = "Hey, that language is uncalled for! >:(";
 		}
-		alert("Please enter numeric values only.");
+		else{alert("Please enter numeric values only.");}
+		
 	}
 	else{
 	var addToScoreboardHistory = {"playerID": x, "score": y};
@@ -184,7 +185,7 @@ function uniquePlayerIDCheck(){
 	for(var k in uniquePlayers){
 		console.log(uniquePlayers[k]+", ");
 	}
-	console.log("uniquwe players: " + uniquePlayers.size);
+	console.log("unique players: " + uniquePlayers.size);
 
 
 }
